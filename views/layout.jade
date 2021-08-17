@@ -1,0 +1,33 @@
+doctype html
+html
+    head
+        title=title
+        meta(name="theme-color" content="#d9230f")
+        link(rel='stylesheet', href='/vendors/bootstrap/dist/css/bootstrap.css')
+        link(rel='stylesheet', href='/vendors/toastr/toastr.css')
+        link(rel='stylesheet', href='/vendors/perfect-scrollbar/css/perfect-scrollbar.css')
+        link(rel='stylesheet', href='/stylesheets/site.css')
+        meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='chrome=1')
+        link(rel="icon" href="images/dota.png")
+    body.container-fluid.body-content
+        block content
+
+        .modal.fade
+            .modal-dialog
+                .modal-content
+                    .modal-header
+                        h4.modal-title Escriba su nick:
+                    .modal-body
+                        input.form-control#username(placeholder="Escriba su nick", autofocus)
+                    .modal-footer
+                        button.btn.btn-default#setName Empezar
+
+        script(src='/socket.io/socket.io.js')
+        script(src='/vendors/moment/moment.js')
+        script(src='/vendors/jquery/dist/jquery.js')
+        script(src='/vendors/bootstrap/dist/js/bootstrap.js')
+        script(src='/vendors/toastr/toastr.js')
+        script(src='/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js')
+        script(src='/javascripts/manager.js')
+        script(src='/javascripts/chatclient.js')

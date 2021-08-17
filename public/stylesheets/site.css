@@ -1,0 +1,128 @@
+#sender {
+  transform: translateY(-35px);
+  position: absolute;
+  width: calc(100% - 30px);
+}
+hr {
+  border-top: 1px solid #029dcc70;
+}
+#username,
+#message {
+  background-color: #006280d2;
+  border: 1px solid #029dcc70;
+  color: white;
+}
+
+.body-content {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.chat {
+  font-size: larger;
+  background-color: #0000007c;
+  color: #fff;
+  border-radius: 5px;
+}
+.chat ul {
+  margin: 15px 15px 50px 15px;
+}
+.rooms,
+.chat {
+  margin-top: 15px;
+  height: calc(100vh - 30px);
+  overflow: auto;
+  position: relative;
+  border-top: 1px solid #029dcc70;
+  border-left: 1px solid #029dcc70;
+  border-right: 1px solid #029dcc70;
+}
+.user {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+.user b {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+.user-img {
+  max-width: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px black;
+}
+.chat-img {
+  max-width: 30px;
+  border-radius: 50%;
+}
+.onchat-img {
+  position: absolute;
+}
+.users {
+  height: 100vh;
+  overflow: auto;
+  position: relative;
+  text-align: center;
+  border-right: 1px solid #029dcc70;
+}
+.users .logo {
+  margin-top: 10px;
+}
+
+.always-visible.ps-container > .ps-scrollbar-x-rail,
+.always-visible.ps-container > .ps-scrollbar-y-rail {
+  opacity: 0.8;
+}
+.users,
+.rooms {
+  background-color: #00808070;
+  color: #fff;
+}
+.page-header {
+  margin-top: 0;
+}
+.message {
+  padding: 5px; 
+  color: rgb(255, 255, 255);
+}
+.message-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.message-content * {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.message span.label:not(.label-default) {
+  cursor: pointer;
+}
+.message .at-response {
+  color: #800000;
+}
+.message.server {
+  color: rgb(204, 204, 204);
+  font-size: smaller;
+}
+.message.server .date {
+  font-size: inherit;
+}
+.date {
+  font-size: smaller;
+}
+
+.modal-content {
+  background-color: #00808041;
+  color: white;
+  border: 1px solid #029dcc70;
+}
+.modal-header {
+  border-bottom: 1px solid #029dcc70;
+}
+.modal-footer {
+  border-top: 1px solid #029dcc70;
+}

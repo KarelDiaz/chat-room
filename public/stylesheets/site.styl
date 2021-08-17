@@ -1,0 +1,56 @@
+#sender
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    border 6px solid transparent
+
+.chat
+    font-size larger
+
+.rooms, .chat, .users
+    height calc(100vh - 46px)
+    overflow auto
+    position relative
+
+.always-visible.ps-container > .ps-scrollbar-x-rail,
+.always-visible.ps-container > .ps-scrollbar-y-rail
+    opacity 0.6
+
+
+.rooms
+    background-color teal
+    border-bottom-right-radius 8px
+
+    h3
+        color white
+
+    .active
+        background-color white
+        margin-right -15px
+        border-top-left-radius 5px
+        border-bottom-left-radius 5px
+
+.page-header
+    margin-top 0
+
+.message
+    display none
+    padding 2px 0
+    color black
+    
+    span.label:not(.label-default)
+        cursor pointer
+        
+    .at-response
+        color teal
+
+.message.server
+    color lightslategrey
+    font-size smaller
+
+    .date
+        font-size inherit
+
+.date
+    font-size smaller

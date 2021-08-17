@@ -1,0 +1,15 @@
+extends layout
+block content
+    .sounds.hidden
+    .row
+        section.col-xs-4.col-sm-2.users
+            img.logo.img-responsive(src="images/dota_logo.png")
+            hr
+            ul.list-unstyled
+
+        .col-sm-10.col-xs-8
+            .chat.always-visible
+                ul.list-unstyled
+
+            form#sender(action='/')
+                input.form-control#message(placeholder="Escriba aqui", autocomplete="off")
